@@ -150,11 +150,11 @@ Open your browser and visit: http://localhost:8233 — you should see the Tempor
 
 ### 🔹 Workflows
 
-## ![Workflows Page](./client//src/assets/workflows.jpeg)
+## ![Workflows Page](./client//src/assets/workflows.jpg)
 
 ### 🔹 Workflows Details
 
-<!-- ## ![Workflows Details Page](./client//src/assets/workflow-dashboard.jpeg) -->
+## ![Workflows Details Page](./client//src/assets/workflow-dashboard.jpg)
 
 ---
 
