@@ -18,47 +18,81 @@
   ); /* Stronger glow for home page CTA */
 }
 
-/* Base Home Container */
+
+/* Home.css */
 .home-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Full viewport height */
-  padding: 80px 20px; /* Padding to account for Navbar */
-  background: var(--background-dark); /* Inherit dark background */
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", Oxygen,
-    Ubuntu, Cantarell, "Open Sans", sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #121212);
+  min-height: 100vh;
+  padding: 40px 20px;
   text-align: center;
-  position: relative;
-  overflow: hidden; /* Hide overflow from background elements */
-  /* Re-applying the radial gradients for a consistent background feel */
-  background: radial-gradient(
-      circle at top left,
-      rgba(138, 43, 226, 0.12) 0%,
-      transparent 40%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(255, 0, 255, 0.1) 0%,
-      transparent 50%
-    ),
-    var(--background-dark);
+  color: var(--text-light);
 }
 
-/* Subtle Animated Texture (Optional, consistent with profile page) */
-.home-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%233A3A3A" fill-opacity="0.08" opacity="0.1"><path d="M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h96v-95h4v95zM10 90h80V10H10v80zm10-10h60V20H20v60zm10-10h40V30H30v40z" fill="none" stroke="%233A3A3A" stroke-width="0.5" /></g></svg>')
-    repeat;
-  opacity: 0.8;
-  z-index: 0; /* Behind content */
-  animation: backgroundPan 60s linear infinite;
+.home-content {
+  max-width: 700px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: var(--card-dark);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+              0 0 30px rgba(155, 70, 255, 0.15);
 }
+
+.home-title {
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-purple);
+}
+
+.home-subtitle {
+  font-size: 1.2em;
+  color: var(--text-muted);
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.home-button {
+  background: linear-gradient(90deg, var(--primary-purple), var(--dark-purple));
+  color: #fff;
+  padding: 14px 30px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.home-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(155, 70, 255, 0.35);
+}
+
+.home-button:active {
+  transform: translateY(0);
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.home-button-icon {
+  font-size: 1.4em;
+  transform: translateY(1px);
+}
+
+.home-logged-in-message {
+  margin-top: 30px;
+  color: var(--light-purple);
+  font-size: 1.1em;
+}
+
+
+
+
 
 @keyframes backgroundPan {
   from {
@@ -69,92 +103,7 @@
   }
 }
 
-/* Content Box */
-.home-content {
-  max-width: 800px; /* Limit content width for readability */
-  padding: 40px;
-  background-color: rgba(
-    36,
-    36,
-    36,
-    0.5
-  ); /* Semi-transparent dark background for content card */
-  border-radius: 20px;
-  box-shadow: 0 15px 30px var(--shadow-dark); /* Shadow for lift */
-  z-index: 1; /* Above background elements */
-  animation: fadeInSlideUp 1s ease-out forwards; /* Apply animation */
-}
 
-/* Headlines */
-.home-content h1 {
-  font-size: 3.5em;
-  color: var(--text-light);
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-/* Paragraph Text */
-.home-content p {
-  font-size: 1.2em;
-  color: var(--text-muted);
-  margin-bottom: 40px;
-  line-height: 1.6;
-}
-
-/* Call to Action Button */
-.home-button {
-  display: inline-flex; /* Allows icon and text on one line */
-  align-items: center;
-  gap: 10px; /* Space between text and icon */
-  padding: 15px 35px;
-  border: none;
-  border-radius: 50px; /* Pill shape */
-  background: linear-gradient(
-    90deg,
-    var(--primary-purple) 0%,
-    var(--dark-purple) 100%
-  );
-  color: white;
-  font-size: 1.1em;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease, box-shadow 0.4s ease;
-  box-shadow: 0 6px 15px var(--button-shadow-base),
-    0 0 25px var(--button-glow-home); /* Prominent purple glow */
-}
-
-.home-button:hover {
-  background: linear-gradient(
-    90deg,
-    var(--dark-purple) 0%,
-    var(--primary-purple) 100%
-  );
-  transform: translateY(-5px); /* Lift more on hover */
-  box-shadow: 0 10px 25px var(--button-shadow-hover),
-    0 0 40px var(--button-glow-home); /* Stronger glow on hover */
-}
-
-.home-button:active {
-  transform: translateY(0);
-  box-shadow: 0 3px 8px var(--button-shadow-base);
-}
-
-.home-button-icon {
-  font-size: 1.2em;
-  transition: transform 0.3s ease;
-}
-
-.home-button:hover .home-button-icon {
-  transform: translateX(5px); /* Arrow moves right on hover */
-}
-
-.home-logged-in-message {
-  font-size: 1.1em;
-  color: var(--primary-purple); /* Highlight message in purple */
-  margin-top: 30px;
-  font-weight: 600;
-}
 
 /* Fade-in Animation (copied from Profile.css) */
 @keyframes fadeInSlideUp {

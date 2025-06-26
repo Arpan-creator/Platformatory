@@ -6,26 +6,30 @@ const Home = () => {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
 
   return (
-    <div className="home-container">
-      <div className="home-content animated-fade-in">
-        <h1>Your Digital Identity, Perfected.</h1>
-        <p>
-          Keep your personal data up-to-date, effortlessly. <br /> Smart
-          automation and secure access in one place.
+    <main className="home-container">
+      <section className="home-content animated-fade-in">
+        <h1 className="home-title">Your Digital Identity, Perfected.</h1>
+        <p className="home-subtitle">
+          Seamlessly manage your personal information.<br />
+          Smart automation. Secure access. One unified platform.
         </p>
-        {!isAuthenticated && (
-          <button onClick={() => loginWithRedirect()} className="home-button">
+
+        {!isAuthenticated ? (
+          <button 
+            className="home-button" 
+            onClick={() => loginWithRedirect()} 
+            aria-label="Start using the platform"
+          >
             Get Started
-            <span className="home-button-icon">→</span> {/* Right arrow icon */}
+            <span className="home-button-icon" aria-hidden="true">→</span>
           </button>
-        )}
-        {isAuthenticated && (
+        ) : (
           <p className="home-logged-in-message">
-            You are logged in! Explore your profile or use the navigation.
+            ✅ You're logged in. Head to your profile or explore the platform.
           </p>
         )}
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 
