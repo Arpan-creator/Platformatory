@@ -3,4 +3,4 @@ const greet = (name: string): string => {
   return `Hello, ${name}!`;
 };
 
-console.log(greet("Dipali"));
+console.log(greet("Arpan"));
