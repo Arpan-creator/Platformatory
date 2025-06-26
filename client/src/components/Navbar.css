@@ -2,8 +2,8 @@
 
 /* Define purple theme variables for consistency */
 :root {
-  --primary-purple: #8a2be2; /* A vibrant Royal Blue-ish purple */
-  --dark-purple: #5a1f99; /* Deeper purple for hover states and button gradients */
+  --primary-purple: #2a9ba5; /* A vibrant Royal Blue-ish purple */
+  --dark-purple: #066363; /* Deeper purple for hover states and button gradients */
   --text-light: #f0f0f0; /* Light text for readability */
   --button-hover-dark: #3a3a3a; /* Dark background on hover for subtle effect */
   --button-shadow-base: rgba(0, 0, 0, 0.3); /* Base shadow for lift */
@@ -41,8 +41,8 @@
 .logout-button {
   background: linear-gradient(
     90deg,
-    #6a5acd 0%,
-    #483d8b 100%
+    #51a1a0 0%,
+    #11939a 100%
   ); /* Medium slate blue to dark slate blue gradient */
   color: white; /* White text for contrast */
   box-shadow: 0 4px 10px var(--button-shadow-base); /* Ensure it has shadow */

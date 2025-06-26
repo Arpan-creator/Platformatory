@@ -2,9 +2,9 @@
 
 /* Aesthetic Purple Color Palette (Dark Theme) */
 :root {
-  --primary-purple: #8a2be2; /* A vibrant Royal Blue-ish purple */
-  --light-purple: #9370db; /* Medium Purple for subtle accents/highlights */
-  --dark-purple: #5a1f99; /* Deeper purple for hover states and button gradients */
+  --primary-purple: #32d7ca; /* A vibrant Royal Blue-ish purple */
+  --light-purple: #4d958c; /* Medium Purple for subtle accents/highlights */
+  --dark-purple: #056f78; /* Deeper purple for hover states and button gradients */
   --background-dark: #1a1a1a; /* Very dark background */
   --card-dark: #242424; /* Slightly lighter dark background for cards */
   --text-light: #f0f0f0; /* Light text for readability */
@@ -140,7 +140,7 @@
 .input-icon {
   position: absolute;
   left: 15px;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   color: var(--text-muted);
   font-size: 1em;
@@ -403,6 +403,14 @@
   transform: translateY(0);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+/* .flexing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} */
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {

@@ -197,7 +197,7 @@ const Profile = () => {
           <FaEdit className="icon" /> Edit Profile
         </h3>
         <form className="profile-form">
-          <div className="input-group">
+          <div className="input-group flexing">
             <FaUser className="input-icon" />
             <input
               type="text"
@@ -207,7 +207,7 @@ const Profile = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="input-group">
+          <div className="input-group flexing">
             <FaUser className="input-icon" />
             <input
               type="text"
@@ -217,7 +217,7 @@ const Profile = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="input-group">
+          <div className="input-group flexing">
             <FaPhone className="input-icon" />
             <input
               type="text"
@@ -227,7 +227,7 @@ const Profile = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="input-group">
+          <div className="input-group flexing">
             <FaCity className="input-icon" />
             <input
               type="text"
@@ -237,7 +237,7 @@ const Profile = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="input-group">
+          <div className="input-group flexing">
             <FaMapPin className="input-icon" />
             <input
               type="text"
