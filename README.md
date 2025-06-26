@@ -234,7 +234,7 @@ Workflow completes
 ```
 
 ```bash
-git clone https://github.com/Dipali2377/Profile-Temporal-App.git
+git clone https://github.com/Arpan-creator/Platformatory.git
 cd Profile-Temporal-App
 ```
 
