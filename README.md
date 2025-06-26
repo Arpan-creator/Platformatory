@@ -14,7 +14,7 @@ A full-stack **MERN** application enhanced with **Temporal.io** and **Auth0** to
 
 ### 🔹 Profile Page
 
-## ![Profile Page](./client//src/assets/loggedin-profile.jpeg)
+## ![Profile Page](./client//src/assets/loggedin-profile.jpg)
 
 ## 🚀 Tech Stack
 
@@ -154,7 +154,7 @@ Open your browser and visit: http://localhost:8233 — you should see the Tempor
 
 ### 🔹 Workflows Details
 
-## ![Workflows Details Page](./client//src/assets/workflow-dashboard.jpeg)
+<!-- ## ![Workflows Details Page](./client//src/assets/workflow-dashboard.jpeg) -->
 
 ---
 
