@@ -6,7 +6,7 @@ A full-stack **MERN** application enhanced with **Temporal.io** and **Auth0** to
 
 ### 🔹 Home Page
 
-![Home Page](./client//src/assets/profilehome.jpeg)
+![Home Page](./client//src/assets/profilehome.jpg)
 
 ### 🔹 Authentication Page
 
