@@ -154,7 +154,7 @@ Open your browser and visit: http://localhost:8233 — you should see the Tempor
 
 ### 🔹 Workflows Details
 
-## ![Workflows Details Page](./client//src/assets/workflowdashboard.jpg)
+## ![Workflows Details Page](./client//src/assets/workflowdashboard.jpeg)
 ---
 
 ## 🧪 API Endpoints
