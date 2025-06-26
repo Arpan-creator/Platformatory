@@ -10,7 +10,7 @@ A full-stack **MERN** application enhanced with **Temporal.io** and **Auth0** to
 
 ### 🔹 Authentication Page
 
-## ![Authentication Page](./client//src/assets/authentication.jpeg)
+## ![Authentication Page](./client//src/assets/authentication.jpg)
 
 ### 🔹 Profile Page
 
