@@ -1,6 +1,7 @@
 import userModel from "../models/userModel.js";
 import { Connection, Client } from "@temporalio/client";
 
+//All USERS
 const getAllUsers = async (req, res) => {
   try {
     let users = await userModel.find();
