@@ -1,6 +1,6 @@
 # 👤 Profile-Temporal-App (MERN + Temporal + Auth0)
 
-A full-stack **MERN** application enhanced with **Temporal.io** and **Auth0** to manage user profiles. It securely handles user updates via Temporal Workflows and syncs user data with external APIs like [CrudCrud](https://crudcrud.com).
+A full-stack **MERN** application enhanced with **Temporal.io** and **Auth0** to manage user profiles. It securely handles user updates via Temporal Workflows and syncs like user data with external APIs like [CrudCrud](https://crudcrud.com).
 
 ## 📸 Preview
 
